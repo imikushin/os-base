@@ -47,6 +47,8 @@ busybox_install()
     make
 
     cp output/images/* $target
+    cp output/host/usr/lib/grub/i386-pc/boot.img $target
+    cp output/host/usr/sbin/grub-bios-setup $target
 }
 
 write_base()
